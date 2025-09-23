@@ -11,6 +11,7 @@ body {
   color: #333;
   background: #0a0a0a;
   color: #ffffff;
+  transition: background 0.3s ease;
 }
 
 .container {
@@ -104,6 +105,7 @@ body {
 
 .page-link:hover {
   color: #20c997;
+  text-shadow: 0 0 5px rgba(32, 201, 151, 0.5);
 }
 
 .page-link::after {
@@ -128,6 +130,7 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  animation: backgroundMove 10s infinite alternate;
 }
 
 .hero-section::before {
@@ -465,6 +468,11 @@ body {
 }
 
 /* Responsive design */
+@keyframes backgroundMove {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
