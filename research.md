@@ -6,7 +6,7 @@ title: "Research & Publications"
 <section class="research-hero">
   <div class="container">
     <h1 class="research-title">Research & Publications</h1>
-    <p class="research-subtitle">Academic contributions to machine learning, statistics, and risk assessment</p>
+    <p class="research-subtitle">Academic contributions to machine learning, statistics, and risk management</p>
   </div>
 </section>
 
@@ -16,10 +16,10 @@ title: "Research & Publications"
       
       <div class="publication-card glass-surface-hover featured">
         <div class="publication-type">Preprint</div>
-        <h3>Standard Errors for Weight of Evidence Encoding</h3>
-        <p class="publication-authors">D. Deburky</p>
-        <p class="publication-venue">arXiv preprint, September 2024</p>
-        <p class="publication-abstract">This paper presents a novel approach to statistical inference in Weight of Evidence encoding, providing confidence intervals and significance testing for feature transformations in credit scoring applications. We derive analytical formulas for standard errors and demonstrate their practical applications.</p>
+        <h3>An Information-Theoretic Framework for Credit Risk Modeling: Unifying Industry Practice with Statistical Theory for Fair and Interpretable Scorecards</h3>
+        <p class="publication-authors">Agus Sudjianto, Denis Burakov</p>
+        <p class="publication-venue">arXiv preprint, September 2025</p>
+        <p class="publication-abstract">We establish a unified information-theoretic framework revealing Weight of Evidence (WoE), Information Value (IV), and Population Stability Index (PSI) as instances of classical information divergences. Through the delta method applied to WoE transformations, we derive standard errors for IV and PSI, enabling formal hypothesis testing and probabilistic fairness constraints for the first time in credit risk modeling.</p>
         <div class="publication-links">
           <a href="/assets/papers/2509.09855v1.pdf" class="btn btn-primary btn-sm" target="_blank">📄 PDF</a>
           <a href="https://arxiv.org/abs/2509.09855" class="btn btn-secondary btn-sm" target="_blank">arXiv</a>
@@ -33,8 +33,8 @@ title: "Research & Publications"
 
       <div class="publication-card glass-surface-hover">
         <div class="publication-type">Technical Report</div>
-        <h3>Statistical Methods for WOE Standard Error Estimation</h3>
-        <p class="publication-authors">D. Deburky</p>
+        <h3>Weight of Evidence (WOE), Log Odds, and Standard Errors</h3>
+        <p class="publication-authors">Denis Burakov</p>
         <p class="publication-venue">xRiskLab Technical Report, 2024</p>
         <p class="publication-abstract">Comprehensive methodology for computing standard errors in Weight of Evidence transformations, with practical implementations and validation studies. Includes bootstrap methods and analytical approximations for confidence interval construction.</p>
         <div class="publication-links">
@@ -68,7 +68,7 @@ title: "Research & Publications"
       <div class="insight-card glass-surface-hover">
         <div class="insight-type">Academic Affiliation</div>
         <h3>University of Edinburgh Business School</h3>
-        <p class="insight-description">External Affiliate at the Credit Research Centre, contributing to research in credit risk assessment and interpretable machine learning methods for financial applications.</p>
+        <p class="insight-description">External Affiliate at the Credit Research Centre, contributing to research in credit risk management and interpretable machine learning methods for financial applications.</p>
         <div class="insight-links">
           <a href="https://www.crc.business-school.ed.ac.uk/about/external-affiliates" class="btn btn-primary btn-sm" target="_blank">🎓 View Profile</a>
         </div>

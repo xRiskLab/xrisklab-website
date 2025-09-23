@@ -164,7 +164,7 @@ pip install xbooster
 - **Model Deployment**: Generate SQL for production systems
 - **Model Validation**: Comprehensive interpretability and diagnostics
 - **Regulatory Compliance**: Transparent, explainable models
-- **Risk Assessment**: Interpretable scoring systems for financial institutions
+- **Risk Management**: Interpretable scoring systems for financial institutions
 
 ## Documentation
 

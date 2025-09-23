@@ -1,6 +1,6 @@
 # xRiskLab Website
 
-The official website for xRiskLab - Advanced Machine Learning Solutions for Risk Assessment and Credit Scoring.
+The official website for xRiskLab - Advanced Machine Learning Solutions for Risk Management and Credit Scoring.
 
 ## About
 

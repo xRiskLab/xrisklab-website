@@ -22,7 +22,7 @@ FastWoe is a Python library for efficient **Weight of Evidence (WOE)** encoding 
 
 ## What is Weight of Evidence?
 
-Weight of Evidence (WOE) transforms categorical features into continuous, interpretable scores that measure the relationship strength between feature categories and target labels. It's particularly valuable in credit scoring and risk assessment where model interpretability is crucial.
+Weight of Evidence (WOE) transforms categorical features into continuous, interpretable scores that measure the relationship strength between feature categories and target labels. It's particularly valuable in credit scoring and risk management where model interpretability is crucial.
 
 **Key Benefits:**
 - Handles missing values and rare categories gracefully
@@ -53,7 +53,7 @@ ci_results = woe.predict_ci(df[['category']], alpha=0.05)
 ## Use Cases
 
 - **Credit Scoring**: Traditional scorecard development with statistical rigor
-- **Risk Assessment**: Interpretable feature engineering for regulated industries
+- **Risk Management**: Interpretable feature engineering for regulated industries
 - **Model Validation**: Statistical significance testing for feature selection
 - **Regulatory Compliance**: Transparent models with confidence intervals
 

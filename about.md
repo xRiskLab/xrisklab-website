@@ -7,7 +7,7 @@ title: "About xRiskLab"
   <div class="container">
     <div class="about-hero">
       <h1>About xRiskLab</h1>
-      <p class="lead">We're pioneering the future of interpretable machine learning for risk assessment and credit scoring.</p>
+      <p class="lead">We're pioneering the future of interpretable machine learning for risk management and credit scoring.</p>
     </div>
 
     <div class="about-content">
@@ -85,7 +85,7 @@ title: "About xRiskLab"
 
       <div class="about-section">
         <h2>Get Started</h2>
-        <p>Ready to transform your risk assessment models? Explore our projects and start building more interpretable, powerful machine learning solutions today.</p>
+        <p>Ready to transform your risk management models? Explore our projects and start building more interpretable, powerful machine learning solutions today.</p>
         
         <div class="cta-buttons">
           <a href="/projects/" class="btn btn-primary">Explore Projects</a>

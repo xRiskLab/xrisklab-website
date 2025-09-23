@@ -6,7 +6,7 @@ title: "Contact"
 <section class="contact-hero">
   <div class="container">
     <h1 class="contact-title">Get in Touch</h1>
-    <p class="contact-subtitle">Ready to transform your risk assessment models? We'd love to hear from you.</p>
+    <p class="contact-subtitle">Ready to transform your risk management models? We'd love to hear from you.</p>
   </div>
 </section>
 

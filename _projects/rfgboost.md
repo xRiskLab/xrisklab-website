@@ -53,7 +53,7 @@ rfgboost/
 ```
 
 ### Ideal Use Cases
-- **Financial Risk Modeling**: Credit scoring and risk assessment with interpretable results
+- **Financial Risk Modeling**: Credit scoring and risk management with interpretable results
 - **High-Interpretability ML**: Applications requiring clear decision paths and feature explanations
 - **Categorical-Heavy Datasets**: Automatic handling of high-cardinality categorical features
 - **Uncertainty-Critical Applications**: Built-in confidence intervals for risk-aware predictions
@@ -300,7 +300,7 @@ scores = cross_val_score(pipeline, X, y, cv=5)
 - **Handles Missing Data**: Built-in missing value handling in WOE encoding
 - **Unseen Categories**: Graceful handling of new categories in production
 - **High Cardinality**: Automatic cardinality reduction for stable encoding
-- **Confidence Intervals**: Uncertainty quantification for risk assessment
+- **Confidence Intervals**: Uncertainty quantification for risk management
 
 ### Performance
 - **Fast Training**: Efficient Random Forest base learners

@@ -105,7 +105,7 @@ pip install woeboost[freethreaded]
 ## Use Cases
 
 - **Credit Risk Modeling**: Interpretable scoring systems for financial institutions
-- **Healthcare Risk Assessment**: Transparent models for medical decision support
+- **Healthcare Risk Management**: Transparent models for medical decision support
 - **Regulatory Compliance**: Models that meet explainability requirements
 - **High-Stakes Decision Making**: Any domain requiring both accuracy and interpretability
 

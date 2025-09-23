@@ -8,7 +8,7 @@ subtitle: "ML Software for Risk Management"
   <div class="container">
     <div class="hero-content">
       <h1 class="hero-title">Artificial Intelligence for Risk Management</h1>
-      <p class="hero-subtitle">Interpretable machine learning solutions for credit scoring, risk assessment, and high-stakes decision making</p>
+      <p class="hero-subtitle">Interpretable machine learning solutions for credit scoring, risk management, and high-stakes decision making</p>
       <div class="hero-buttons">
         <a href="/projects/" class="btn btn-primary btn-lg">Explore Projects</a>
         <a href="/about/" class="btn btn-secondary btn-lg">Learn More</a>
