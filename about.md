@@ -21,19 +21,19 @@ title: "About xRiskLab"
       <div class="about-section">
         <h2>Our Expertise</h2>
         <div class="expertise-grid">
-          <div class="expertise-item">
+          <div class="expertise-item glass-surface">
             <h3>🎯 Credit Scoring</h3>
             <p>Advanced scorecard boosting, WOE-based models, and interpretable gradient boosting for financial institutions.</p>
           </div>
-          <div class="expertise-item">
+          <div class="expertise-item glass-surface">
             <h3>🔍 Interpretable AI</h3>
             <p>Transparent machine learning solutions with statistical rigor and confidence intervals for decision-making.</p>
           </div>
-          <div class="expertise-item">
+          <div class="expertise-item glass-surface">
             <h3>⚡ High Performance</h3>
             <p>Production-scale algorithms optimized for speed and scalability in enterprise environments.</p>
           </div>
-          <div class="expertise-item">
+          <div class="expertise-item glass-surface">
             <h3>📊 Statistical Inference</h3>
             <p>Rigorous statistical methods with uncertainty quantification and standard error calculations.</p>
           </div>
@@ -98,77 +98,87 @@ title: "About xRiskLab"
 
 <style>
 .about-page {
-  background: #0a0a0a;
+  background: transparent;
   min-height: 100vh;
-  padding: 2rem 0;
+  padding: 40px 0;
 }
 
 .about-hero {
   text-align: center;
-  margin-bottom: 4rem;
-  padding: 2rem 0;
+  margin-bottom: 80px;
+  padding: 40px 0;
 }
 
 .about-hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #ffffff;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .lead {
-  font-size: 1.25rem;
-  color: #cccccc;
-  max-width: 600px;
+  font-size: clamp(1.125rem, 3vw, 1.375rem);
+  color: var(--text-secondary);
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .about-section {
-  margin-bottom: 4rem;
+  margin-bottom: 80px;
 }
 
 .about-section h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: #20c997;
+  margin-bottom: 24px;
+  color: var(--text-primary);
 }
 
 .about-section p {
-  color: #cccccc;
-  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
   line-height: 1.7;
+  font-size: 16px;
 }
 
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 24px;
+  margin-top: 32px;
 }
 
 .expertise-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
+  padding: 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expertise-item:hover {
+  transform: translateY(-4px);
+  background: var(--surface-glass-hover);
 }
 
 .expertise-item h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  color: #20c997;
+  margin-bottom: 16px;
+  color: var(--text-primary);
 }
 
 .expertise-item p {
-  color: #cccccc;
+  color: var(--text-secondary);
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 .approach-list {
@@ -177,58 +187,72 @@ title: "About xRiskLab"
 }
 
 .approach-list li {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-  color: #cccccc;
+  background: var(--surface-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.approach-list li:hover {
+  background: var(--surface-glass-hover);
+  transform: translateX(8px);
 }
 
 .approach-list li strong {
-  color: #20c997;
+  color: var(--accent-blue);
+  font-weight: 600;
 }
 
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 32px;
+  margin-top: 32px;
 }
 
 .benefit-item {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
 }
 
 .benefit-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 48px;
+  margin-bottom: 16px;
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+  filter: grayscale(0);
 }
 
 .benefit-item h4 {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  color: #20c997;
+  margin-bottom: 16px;
+  color: var(--text-primary);
 }
 
 .benefit-item p {
-  color: #cccccc;
+  color: var(--text-secondary);
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 .cta-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 
 @media (max-width: 768px) {
   .about-hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
   .lead {
@@ -243,6 +267,11 @@ title: "About xRiskLab"
   .cta-buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .expertise-item,
+  .benefit-item {
+    padding: 24px;
   }
 }
 </style>

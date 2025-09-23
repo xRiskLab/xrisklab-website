@@ -3,363 +3,419 @@ layout: default
 title: "Projects"
 ---
 
-<div class="projects-page">
+<section class="projects-hero">
   <div class="container">
-    <div class="projects-hero">
-      <h1>Our Projects</h1>
-      <p class="lead">Open-source machine learning tools for interpretable risk assessment and credit scoring</p>
-    </div>
+    <h1 class="projects-title">Open Source Projects</h1>
+    <p class="projects-subtitle">Advanced machine learning libraries for risk assessment and interpretable AI</p>
+  </div>
+</section>
 
+<section class="projects-section">
+  <div class="container">
     <div class="projects-grid">
-      <div class="project-card featured">
+      <div class="project-card glass-surface-hover featured">
         <div class="project-header">
-          <h2><a href="/projects/fastwoe/">FastWoe</a></h2>
+          <h3><a href="/fastwoe/">FastWoe</a></h3>
           <div class="project-badges">
-            <span class="badge badge-primary">Featured</span>
-            <span class="badge">Python</span>
+            <span class="badge badge-featured">Featured</span>
+            <span class="badge badge-primary">Statistics</span>
+            <span class="badge badge-secondary">Feature Engineering</span>
           </div>
         </div>
-        <p class="project-description">Fast Weight of Evidence (WOE) encoding with statistical inference, confidence intervals, and support for high-cardinality categorical features.</p>
+        <p>Lightweight Weight of Evidence encoding with comprehensive statistics and inference capabilities. Built for fast, efficient feature engineering in credit scoring and risk modeling.</p>
         <div class="project-features">
-          <span class="feature">⚡ Fast encoding</span>
-          <span class="feature">📊 Statistical inference</span>
-          <span class="feature">🎯 High-cardinality support</span>
+          <ul>
+            <li>✨ Efficient WOE encoding algorithms</li>
+            <li>📊 Statistical significance testing</li>
+            <li>🔍 Information Value calculations</li>
+            <li>⚡ High-performance implementation</li>
+          </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/fastwoe/" class="btn btn-primary" target="_blank">PyPI</a>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://pypi.org/project/fastwoe/" class="btn btn-secondary btn-sm">PyPI</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass-surface-hover">
         <div class="project-header">
-          <h2><a href="/projects/woeboost/">WoeBoost</a></h2>
+          <h3><a href="/woeboost/">WoeBoost</a></h3>
           <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">Gradient Boosting</span>
+            <span class="badge badge-primary">XGBoost</span>
+            <span class="badge badge-secondary">Interpretability</span>
           </div>
         </div>
-        <p class="project-description">Interpretable gradient boosting with WOE-based scoring for high-stakes domains. Combines predictive power with transparency.</p>
+        <p>Interpretable gradient boosting with WOE-based scoring for high-stakes domains. Combines the power of XGBoost with the interpretability requirements of regulated industries.</p>
         <div class="project-features">
-          <span class="feature">🌳 Gradient boosting</span>
-          <span class="feature">🔍 Interpretable</span>
-          <span class="feature">⚡ High performance</span>
+          <ul>
+            <li>🎯 WOE-based feature transformations</li>
+            <li>� Model interpretability tools</li>
+            <li>📈 Performance optimization</li>
+            <li>⚖️ Regulatory compliance features</li>
+          </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/woeboost" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/woeboost/" class="btn btn-primary" target="_blank">PyPI</a>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/xRiskLab/woeboost" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://pypi.org/project/woeboost/" class="btn btn-secondary btn-sm">PyPI</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass-surface-hover">
         <div class="project-header">
-          <h2><a href="/projects/xbooster/">xBooster</a></h2>
+          <h3><a href="/xbooster/">xBooster</a></h3>
           <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">XGBoost</span>
-            <span class="badge">SQL</span>
+            <span class="badge badge-primary">SQL</span>
+            <span class="badge badge-secondary">Deployment</span>
           </div>
         </div>
-        <p class="project-description">Scorecard framework for XGBoost and CatBoost with SQL deployment capabilities and comprehensive interpretability tools.</p>
+        <p>Comprehensive scorecard framework for XGBoost and CatBoost with SQL deployment capabilities. Streamlines model development from training to production deployment.</p>
         <div class="project-features">
-          <span class="feature">📊 Scorecard generation</span>
-          <span class="feature">🗄️ SQL deployment</span>
-          <span class="feature">📈 Visualization</span>
+          <ul>
+            <li>🚀 End-to-end model pipeline</li>
+            <li>� SQL code generation</li>
+            <li>📊 Model monitoring tools</li>
+            <li>� Production deployment</li>
+          </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/xBooster" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/xbooster/" class="btn btn-primary" target="_blank">PyPI</a>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/xRiskLab/xBooster" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://pypi.org/project/xbooster/" class="btn btn-secondary btn-sm">PyPI</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass-surface-hover">
         <div class="project-header">
-          <h2><a href="/projects/fisher-scoring/">Fisher Scoring</a></h2>
+          <h3><a href="/projects/fisher-scoring/">Fisher Scoring</a></h3>
           <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">Statistics</span>
+            <span class="badge badge-primary">Statistics</span>
+            <span class="badge badge-secondary">MLE</span>
           </div>
         </div>
-        <p class="project-description">Efficient implementation of Fisher's scoring algorithm for maximum likelihood estimation with numerical optimization.</p>
+        <p>Efficient implementation of Fisher's scoring algorithm for maximum likelihood estimation with numerical optimization and convergence diagnostics.</p>
         <div class="project-features">
-          <span class="feature">📈 MLE optimization</span>
-          <span class="feature">⚡ Efficient</span>
-          <span class="feature">🔬 Statistical</span>
+          <ul>
+            <li>📈 MLE optimization</li>
+            <li>⚡ Fast convergence</li>
+            <li>🔬 Statistical rigor</li>
+            <li>📊 Diagnostic tools</li>
+          </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/fisher-scoring" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/fisher-scoring/" class="btn btn-primary" target="_blank">PyPI</a>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/xRiskLab/fisher-scoring" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://pypi.org/project/fisher-scoring/" class="btn btn-secondary btn-sm">PyPI</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass-surface-hover">
         <div class="project-header">
-          <h2><a href="/projects/pearsonify/">Pearsonify</a></h2>
+          <h3><a href="/projects/pearsonify/">Pearsonify</a></h3>
           <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">Correlation</span>
+            <span class="badge badge-primary">Correlation</span>
+            <span class="badge badge-secondary">Analysis</span>
           </div>
         </div>
-        <p class="project-description">Tools for correlation analysis and data transformation using Pearson correlation methods and statistical techniques.</p>
+        <p>Advanced correlation analysis and data transformation toolkit using Pearson correlation methods and statistical techniques for data science workflows.</p>
         <div class="project-features">
-          <span class="feature">📊 Correlation analysis</span>
-          <span class="feature">🔄 Data transformation</span>
-          <span class="feature">📈 Statistical methods</span>
+          <ul>
+            <li>📊 Correlation analysis</li>
+            <li>🔄 Data transformation</li>
+            <li>📈 Statistical methods</li>
+            <li>🎯 Feature selection</li>
+          </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/pearsonify" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/pearsonify/" class="btn btn-primary" target="_blank">PyPI</a>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/xRiskLab/pearsonify" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://pypi.org/project/pearsonify/" class="btn btn-secondary btn-sm">PyPI</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card glass-surface-hover">
         <div class="project-header">
-          <h2><a href="/projects/rf-explainer/">RF Explainer</a></h2>
+          <h3><a href="/projects/rf-explainer/">RF Explainer</a></h3>
           <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">Random Forest</span>
+            <span class="badge badge-primary">Random Forest</span>
+            <span class="badge badge-secondary">Explainability</span>
           </div>
         </div>
-        <p class="project-description">Interpretability tools for Random Forest models with feature importance analysis and model explanation capabilities.</p>
+        <p>Comprehensive interpretability tools for Random Forest models with feature importance analysis and model explanation capabilities for ML transparency.</p>
         <div class="project-features">
-          <span class="feature">🌲 Random Forest</span>
-          <span class="feature">🔍 Explainability</span>
-          <span class="feature">📊 Feature importance</span>
+          <ul>
+            <li>🌲 Random Forest analysis</li>
+            <li>🔍 Model explainability</li>
+            <li>📊 Feature importance</li>
+            <li>📈 Visualization tools</li>
+          </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/rf-explainer" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/rf-explainer/" class="btn btn-primary" target="_blank">PyPI</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <h2><a href="/projects/rfgboost/">RFGBoost</a></h2>
-          <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">Gradient Boosting</span>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="https://github.com/xRiskLab/rf-explainer" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://pypi.org/project/rf-explainer/" class="btn btn-secondary btn-sm">PyPI</a>
           </div>
         </div>
-        <p class="project-description">Random Forest Gradient Boosting implementation combining the strengths of both ensemble methods for improved performance.</p>
-        <div class="project-features">
-          <span class="feature">🌲 Random Forest</span>
-          <span class="feature">⚡ Gradient Boosting</span>
-          <span class="feature">🎯 Ensemble</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/rfgboost" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/rfgboost/" class="btn btn-primary" target="_blank">PyPI</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <h2><a href="/projects/catboost-incremental/">CatBoost Incremental</a></h2>
-          <div class="project-badges">
-            <span class="badge">Python</span>
-            <span class="badge">CatBoost</span>
-            <span class="badge">Ray</span>
-          </div>
-        </div>
-        <p class="project-description">Incremental learning framework for CatBoost with Ray integration for distributed training and hyperparameter tuning.</p>
-        <div class="project-features">
-          <span class="feature">🐱 CatBoost</span>
-          <span class="feature">🔄 Incremental learning</span>
-          <span class="feature">⚡ Ray distributed</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/xRiskLab/catboost-incremental" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="https://pypi.org/project/catboost-incremental/" class="btn btn-primary" target="_blank">PyPI</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="projects-cta">
-      <h2>Ready to Get Started?</h2>
-      <p>Choose a project that fits your needs and start building more interpretable machine learning solutions today.</p>
-      <div class="cta-buttons">
-        <a href="/contact/" class="btn btn-primary">Get Support</a>
-        <a href="https://github.com/xRiskLab" class="btn btn-secondary" target="_blank">View on GitHub</a>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="projects-contribute">
+  <div class="container">
+    <div class="contribute-content">
+      <h2>Contribute to xRiskLab</h2>
+      <p>Our projects are open source and community-driven. We welcome contributions from developers, data scientists, and researchers who share our vision of interpretable machine learning.</p>
+      <div class="contribute-buttons">
+        <a href="https://github.com/xRiskLab" class="btn btn-primary">View on GitHub</a>
+        <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <style>
-.projects-page {
-  background: #0a0a0a;
-  min-height: 100vh;
-  padding: 2rem 0;
-}
-
 .projects-hero {
+  background: transparent;
+  padding: 80px 0 40px;
   text-align: center;
-  margin-bottom: 4rem;
-  padding: 2rem 0;
 }
 
-.projects-hero h1 {
-  font-size: 3rem;
+.projects-title {
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #ffffff;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.lead {
-  font-size: 1.25rem;
-  color: #cccccc;
-  max-width: 600px;
+.projects-subtitle {
+  font-size: clamp(1.125rem, 3vw, 1.375rem);
+  color: var(--text-secondary);
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.5;
+}
+
+.projects-section {
+  padding: 80px 0;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px;
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(32, 201, 151, 0.2);
+  background: var(--surface-glass);
+  backdrop-filter: var(--blur-amount);
+  -webkit-backdrop-filter: var(--blur-amount);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 32px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card.featured {
-  border-color: #20c997;
-  background: rgba(32, 201, 151, 0.05);
+  border-color: var(--accent-blue);
+  background: rgba(0, 122, 255, 0.08);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--primary-gradient);
+  transform: translateX(-100%);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover::before {
+  transform: translateX(0);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: var(--surface-glass-hover);
+  box-shadow: var(--shadow-glass);
 }
 
 .project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-.project-header h2 {
+.project-header h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 0;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
 }
 
-.project-header h2 a {
-  color: #20c997;
+.project-header h3 a {
+  color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.project-header h2 a:hover {
-  color: #17a2b8;
+.project-card:hover .project-header h3 {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .project-badges {
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .badge {
-  background: rgba(255, 255, 255, 0.1);
-  color: #cccccc;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
   font-weight: 500;
 }
 
 .badge-primary {
-  background: rgba(32, 201, 151, 0.2);
-  color: #20c997;
+  background: rgba(0, 122, 255, 0.15);
+  color: var(--accent-blue);
+  border: 1px solid rgba(0, 122, 255, 0.2);
 }
 
-.project-description {
-  color: #cccccc;
-  margin-bottom: 1.5rem;
+.badge-secondary {
+  background: rgba(88, 86, 214, 0.15);
+  color: var(--accent-purple);
+  border: 1px solid rgba(88, 86, 214, 0.2);
+}
+
+.badge-featured {
+  background: rgba(255, 45, 146, 0.15);
+  color: var(--accent-pink);
+  border: 1px solid rgba(255, 45, 146, 0.2);
+  font-weight: 600;
+}
+
+.project-card p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
   line-height: 1.6;
+  font-size: 15px;
+  flex-grow: 1;
 }
 
 .project-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
-.feature {
-  background: rgba(32, 201, 151, 0.1);
-  color: #20c997;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 500;
+.project-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-features li {
+  color: var(--text-secondary);
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: color 0.3s ease;
+}
+
+.project-features li:last-child {
+  border-bottom: none;
+}
+
+.project-features li:hover {
+  color: var(--text-primary);
+}
+
+.project-footer {
+  margin-top: auto;
 }
 
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-.projects-cta {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 3rem 2rem;
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 8px;
 }
 
-.projects-cta h2 {
+.projects-contribute {
+  background: var(--surface-glass);
+  backdrop-filter: var(--blur-amount);
+  -webkit-backdrop-filter: var(--blur-amount);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.contribute-content h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  color: #20c997;
+  margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
-.projects-cta p {
-  color: #cccccc;
-  margin-bottom: 2rem;
-  font-size: 1.125rem;
+.contribute-content p {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-.cta-buttons {
+.contribute-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-  .projects-hero h1 {
-    font-size: 2rem;
-  }
-  
-  .lead {
-    font-size: 1.125rem;
-  }
-  
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
-  
-  .project-header {
-    flex-direction: column;
-    gap: 1rem;
+
+  .project-card {
+    padding: 24px;
   }
-  
-  .project-links {
-    justify-content: center;
-  }
-  
-  .cta-buttons {
+
+  .contribute-buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .projects-contribute {
+    margin: 40px 16px;
+    padding: 32px 24px;
   }
 }
 </style>
