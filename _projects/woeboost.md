@@ -2,8 +2,11 @@
 layout: project
 title: "WoeBoost"
 description: "Interpretable gradient boosting with WOE-based scoring for high-stakes domains"
+image: "/assets/images/projects/woeboost.png"
 github: "https://github.com/xRiskLab/woeboost"
 pypi: "https://pypi.org/project/woeboost/"
+tags: ["Python", "Machine Learning", "Interpretability", "Credit Scoring", "Gradient Boosting"]
+featured: false
 ---
 
 WoeBoost is a Python package designed to bridge the gap between the predictive power of gradient boosting and the interpretability required in high-stakes domains such as finance, healthcare, and law. It introduces an interpretable, evidence-driven framework for scoring tasks, inspired by the principles of **Weight of Evidence (WOE)** and the ideas of **Alan M. Turing**.

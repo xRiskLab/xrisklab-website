@@ -1,0 +1,24 @@
+# Research Papers Directory
+# 
+# Add your academic papers and research documents here
+# 
+# Recommended naming convention:
+# - author-title-venue-year.pdf
+# - fastwoe-statistical-inference-icml-2023.pdf
+# - woeboost-interpretable-boosting-jmlr-2023.pdf
+# 
+# Supported formats:
+# - PDF (recommended)
+# - Research papers
+# - Technical reports
+# - Preprints
+# 
+# File size recommendations:
+# - Keep under 10MB for web performance
+# - Optimize PDFs for web viewing
+# 
+# Example files to add:
+# - Your published papers
+# - Conference presentations
+# - Technical documentation
+# - Research proposals

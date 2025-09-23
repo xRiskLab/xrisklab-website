@@ -2,40 +2,308 @@
 layout: default
 ---
 
-<article class="project-page">
-  <header class="project-header">
+<div class="project-page">
+  <section class="project-hero">
     <div class="container">
-      <div class="project-meta">
-        <h1 class="project-title">{{ page.title }}</h1>
-        <p class="project-description">{{ page.description }}</p>
-        <div class="project-links">
-          {% if page.github %}
-            <a href="{{ page.github }}" class="btn btn-outline" target="_blank">
-              <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              View on GitHub
-            </a>
+      <div class="project-hero-content">
+        {% if page.image %}
+        <div class="project-image">
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" />
+        </div>
+        {% endif %}
+        <div class="project-info">
+          <h1 class="project-title">{{ page.title }}</h1>
+          <p class="project-description">{{ page.description }}</p>
+          
+          {% if page.tags %}
+          <div class="project-tags">
+            {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
           {% endif %}
-          {% if page.pypi %}
-            <a href="{{ page.pypi }}" class="btn btn-primary" target="_blank">
-              <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
-                <path fill="currentColor" d="M12 6l-6 6 6 6 6-6-6-6z"/>
-              </svg>
-              Install from PyPI
+          
+          <div class="project-links">
+            {% if page.github %}
+            <a href="{{ page.github }}" class="btn btn-primary" target="_blank">
+              <span>💻</span> GitHub
             </a>
-          {% endif %}
+            {% endif %}
+            {% if page.pypi %}
+            <a href="{{ page.pypi }}" class="btn btn-secondary" target="_blank">
+              <span>📦</span> PyPI
+            </a>
+            {% endif %}
+            {% if page.docs %}
+            <a href="{{ page.docs }}" class="btn btn-outline" target="_blank">
+              <span>📖</span> Documentation
+            </a>
+            {% endif %}
+            {% if page.paper %}
+            <a href="{{ page.paper }}" class="btn btn-outline" target="_blank">
+              <span>📄</span> Research Paper
+            </a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <div class="project-content">
+  <section class="project-content">
     <div class="container">
       <div class="project-body">
         {{ content }}
       </div>
     </div>
-  </div>
-</article>
+  </section>
+
+  <section class="project-footer">
+    <div class="container">
+      <div class="project-footer-content">
+        <div class="project-footer-links">
+          <h3>Get Started</h3>
+          <p>Ready to use {{ page.title }} in your project?</p>
+          <div class="footer-buttons">
+            {% if page.pypi %}
+            <a href="{{ page.pypi }}" class="btn btn-primary" target="_blank">Install Now</a>
+            {% endif %}
+            {% if page.github %}
+            <a href="{{ page.github }}" class="btn btn-secondary" target="_blank">View Source</a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="project-footer-contact">
+          <h3>Need Help?</h3>
+          <p>Have questions or need support?</p>
+          <a href="mailto:contact@xrisklab.ai" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+.project-page {
+  background: var(--background-primary);
+  min-height: 100vh;
+}
+
+.project-hero {
+  background: transparent;
+  padding: 120px 0 80px;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.project-hero-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.project-image {
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--shadow-glass);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.project-description {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.project-content {
+  padding: 80px 0;
+}
+
+.project-body {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.project-body h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 48px 0 24px 0;
+  color: var(--text-primary);
+}
+
+.project-body h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 32px 0 16px 0;
+  color: var(--text-primary);
+}
+
+.project-body p {
+  margin-bottom: 16px;
+}
+
+.project-body ul {
+  margin-bottom: 24px;
+  padding-left: 24px;
+}
+
+.project-body li {
+  margin-bottom: 8px;
+}
+
+.project-body strong {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.project-body code {
+  background: rgba(0, 122, 255, 0.1);
+  color: var(--accent-blue);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.project-body pre {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 24px;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.project-body pre code {
+  background: none;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+.project-footer {
+  background: var(--surface-glass);
+  backdrop-filter: var(--blur-amount);
+  -webkit-backdrop-filter: var(--blur-amount);
+  border-top: 1px solid var(--border-glass);
+  padding: 64px 0;
+}
+
+.project-footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-footer-links h3,
+.project-footer-contact h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.project-footer-links p,
+.project-footer-contact p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .project-hero-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .project-image {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+  .project-footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .footer-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-hero {
+    padding: 100px 0 60px;
+  }
+
+  .project-content {
+    padding: 60px 0;
+  }
+
+  .project-footer {
+    padding: 48px 0;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>

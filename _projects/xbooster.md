@@ -2,8 +2,11 @@
 layout: project
 title: "xBooster"
 description: "Scorecard framework for XGBoost and CatBoost with SQL deployment capabilities"
+image: "/assets/images/projects/xbooster.png"
 github: "https://github.com/xRiskLab/xBooster"
 pypi: "https://pypi.org/project/xbooster/"
+tags: ["Python", "XGBoost", "CatBoost", "SQL", "Machine Learning", "Deployment"]
+featured: false
 ---
 
 xBooster is a scorecard-format framework for logistic regression tasks with gradient-boosted decision trees (XGBoost and CatBoost). It allows you to convert a classification model into a logarithmic (point) scoring system while providing a comprehensive suite of interpretability tools.

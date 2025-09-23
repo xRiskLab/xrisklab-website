@@ -7,7 +7,7 @@ subtitle: "ML Software for Risk Management"
 <section class="hero-section">
   <div class="container">
     <div class="hero-content">
-      <h1 class="hero-title">Advanced ML for Risk Management</h1>
+      <h1 class="hero-title">Artificial Intelligence for Risk Management</h1>
       <p class="hero-subtitle">Interpretable machine learning solutions for credit scoring, risk assessment, and high-stakes decision making</p>
       <div class="hero-buttons">
         <a href="/projects/" class="btn btn-primary btn-lg">Explore Projects</a>
@@ -48,27 +48,27 @@ subtitle: "ML Software for Risk Management"
         <h3>FastWoe</h3>
         <p>Lightweight Weight of Evidence encoding with statistics and inference capabilities for feature engineering.</p>
         <div class="project-tags">
-          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
           <span class="tag">Statistics</span>
-          <span class="tag">Feature Engineering</span>
+          <span class="tag">Machine Learning</span>
         </div>
       </a>
       <a class="repo-card glass-surface-hover" href="/woeboost/">
         <h3>WoeBoost</h3>
         <p>Interpretable gradient boosting with WOE-based scoring for high-stakes domains and regulatory compliance.</p>
         <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">XGBoost</span>
+          <span class="tag">Machine Learning</span>
           <span class="tag">Interpretability</span>
+          <span class="tag">Credit Scoring</span>
         </div>
       </a>
       <a class="repo-card glass-surface-hover" href="/xbooster/">
         <h3>xBooster</h3>
         <p>Scorecard framework for XGBoost and CatBoost with SQL deployment capabilities and model monitoring.</p>
         <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Deployment</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">CatBoost</span>
+          <span class="tag">SQL Deployment</span>
         </div>
       </a>
     </div>

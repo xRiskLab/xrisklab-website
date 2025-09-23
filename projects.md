@@ -14,27 +14,35 @@ title: "Projects"
   <div class="container">
     <div class="projects-grid">
       <div class="project-card glass-surface-hover featured">
-        <div class="project-header">
-          <h3><a href="/fastwoe/">FastWoe</a></h3>
-          <div class="project-badges">
+        <div class="project-image">
+          <img src="/assets/images/projects/fastwoe-workflow.png" alt="FastWoe Workflow Diagram" loading="lazy">
+          <div class="project-overlay">
             <span class="badge badge-featured">Featured</span>
-            <span class="badge badge-primary">Statistics</span>
-            <span class="badge badge-secondary">Feature Engineering</span>
           </div>
         </div>
-        <p>Lightweight Weight of Evidence encoding with comprehensive statistics and inference capabilities. Built for fast, efficient feature engineering in credit scoring and risk modeling.</p>
-        <div class="project-features">
-          <ul>
-            <li>✨ Efficient WOE encoding algorithms</li>
-            <li>📊 Statistical significance testing</li>
-            <li>🔍 Information Value calculations</li>
-            <li>⚡ High-performance implementation</li>
-          </ul>
-        </div>
-        <div class="project-footer">
-          <div class="project-links">
-            <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm">GitHub</a>
-            <a href="https://pypi.org/project/fastwoe/" class="btn btn-secondary btn-sm">PyPI</a>
+        <div class="project-content">
+          <div class="project-header">
+            <h3><a href="/fastwoe/">FastWoe</a></h3>
+            <div class="project-badges">
+              <span class="badge badge-primary">Scikit-learn</span>
+              <span class="badge badge-secondary">Statistics</span>
+            </div>
+          </div>
+          <p>Lightweight Weight of Evidence encoding with comprehensive statistics and inference capabilities. Built for fast, efficient feature engineering in credit scoring and risk modeling.</p>
+          <div class="project-features">
+            <ul>
+              <li>✨ Efficient WOE encoding algorithms</li>
+              <li>📊 Statistical significance testing</li>
+              <li>🔍 Information Value calculations</li>
+              <li>⚡ High-performance implementation</li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm">GitHub</a>
+              <a href="https://pypi.org/project/fastwoe/" class="btn btn-secondary btn-sm">PyPI</a>
+              <a href="/assets/papers/fastwoe-statistical-inference-2023.pdf" class="btn btn-research btn-sm">📄 Paper</a>
+            </div>
           </div>
         </div>
       </div>
@@ -43,7 +51,7 @@ title: "Projects"
         <div class="project-header">
           <h3><a href="/woeboost/">WoeBoost</a></h3>
           <div class="project-badges">
-            <span class="badge badge-primary">XGBoost</span>
+            <span class="badge badge-primary">Machine Learning</span>
             <span class="badge badge-secondary">Interpretability</span>
           </div>
         </div>
@@ -68,8 +76,8 @@ title: "Projects"
         <div class="project-header">
           <h3><a href="/xbooster/">xBooster</a></h3>
           <div class="project-badges">
-            <span class="badge badge-primary">SQL</span>
-            <span class="badge badge-secondary">Deployment</span>
+            <span class="badge badge-primary">XGBoost</span>
+            <span class="badge badge-secondary">CatBoost</span>
           </div>
         </div>
         <p>Comprehensive scorecard framework for XGBoost and CatBoost with SQL deployment capabilities. Streamlines model development from training to production deployment.</p>
@@ -94,7 +102,7 @@ title: "Projects"
           <h3><a href="/projects/fisher-scoring/">Fisher Scoring</a></h3>
           <div class="project-badges">
             <span class="badge badge-primary">Statistics</span>
-            <span class="badge badge-secondary">MLE</span>
+            <span class="badge badge-secondary">Machine Learning</span>
           </div>
         </div>
         <p>Efficient implementation of Fisher's scoring algorithm for maximum likelihood estimation with numerical optimization and convergence diagnostics.</p>
@@ -143,8 +151,8 @@ title: "Projects"
         <div class="project-header">
           <h3><a href="/projects/rf-explainer/">RF Explainer</a></h3>
           <div class="project-badges">
-            <span class="badge badge-primary">Random Forest</span>
-            <span class="badge badge-secondary">Explainability</span>
+            <span class="badge badge-primary">Scikit-learn</span>
+            <span class="badge badge-secondary">Random Forest</span>
           </div>
         </div>
         <p>Comprehensive interpretability tools for Random Forest models with feature importance analysis and model explanation capabilities for ML transparency.</p>
@@ -222,7 +230,7 @@ title: "Projects"
   -webkit-backdrop-filter: var(--blur-amount);
   border: 1px solid var(--border-glass);
   border-radius: 20px;
-  padding: 32px;
+  padding: 0;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -246,6 +254,7 @@ title: "Projects"
   background: var(--primary-gradient);
   transform: translateX(-100%);
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
 }
 
 .project-card:hover::before {
@@ -256,6 +265,39 @@ title: "Projects"
   transform: translateY(-8px);
   background: var(--surface-glass-hover);
   box-shadow: var(--shadow-glass);
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+}
+
+.project-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-header {
@@ -363,6 +405,19 @@ title: "Projects"
   padding: 8px 16px;
   font-size: 13px;
   border-radius: 8px;
+}
+
+.btn-research {
+  background: rgba(175, 82, 222, 0.15);
+  color: var(--accent-pink);
+  border: 1px solid rgba(175, 82, 222, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-research:hover {
+  background: rgba(175, 82, 222, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(175, 82, 222, 0.3);
 }
 
 .projects-contribute {
