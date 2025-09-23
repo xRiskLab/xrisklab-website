@@ -1,0 +1,56 @@
+# Site settings
+title: "xRiskLab"
+description: "Advanced Machine Learning Solutions for Risk Assessment and Credit Scoring"
+author: "xRiskLab"
+email: "contact@xrisklab.ai"
+url: "https://xrisklab.ai"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Navigation
+header_pages:
+  - about.md
+  - projects/
+  - contact.md
+
+# Social links
+social_links:
+  github: xRiskLab
+  email: contact@xrisklab.ai
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
