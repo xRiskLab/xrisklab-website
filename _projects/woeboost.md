@@ -9,110 +9,27 @@ tags: ["Python", "Machine Learning", "Interpretability", "Credit Scoring", "Grad
 featured: false
 ---
 
-WoeBoost is a Python package designed to bridge the gap between the predictive power of gradient boosting and the interpretability required in high-stakes domains such as finance, healthcare, and law. It introduces an interpretable, evidence-driven framework for scoring tasks, inspired by the principles of **Weight of Evidence (WOE)** and the ideas of **Alan M. Turing**.
+WoeBoost combines **gradient boosting power with Weight of Evidence interpretability** for high-stakes domains requiring both accuracy and explainability.
 
-## Key Features
+## What It Does
 
-- **🌟 Gradient Boosting with Explainability**: Combines the strength of gradient boosting with the interpretability of WOE-based scoring systems
-- **📊 Calibrated Scores**: Produces well-calibrated scores essential for decision-making in regulated environments
-- **🤖 AutoML-like Enhancements**: Infers monotonic relationships automatically and supports early stopping
-- **🔧 Support for Missing Values & Categorical Inputs**: Handles various data types seamlessly while maintaining interpretability
-- **🛠️ Diagnostic Toolkit**: Partial dependence plots, feature importance analysis, and decision boundary visualization
-- **📈 WOE Inference Maker**: Provides classical WOE calculations and bin-level insights
+Bridges the gap between black-box gradient boosting performance and the interpretability required in regulated industries. Every prediction is backed by accumulated evidence that stakeholders can understand and validate.
 
-## How It Works
+## Key Capabilities
 
-1. **🔍 Initialization**: Starts with prior log odds, representing baseline probabilities
-2. **📈 Iterative Updates**: Each boosting iteration calculates residual per each binned feature and sums residuals into total evidence (WOE), updating predictions
-3. **🔗 Evidence Accumulation**: Combines evidence from all iterations, producing a cumulative and interpretable scoring model
+- **Evidence-Based Boosting**: Each iteration accumulates interpretable Weight of Evidence rather than abstract residuals
+- **Automatic Monotonicity**: Infers and enforces logical relationships between features and outcomes
+- **Calibrated Scoring**: Produces well-calibrated probabilities essential for regulated decision-making
+- **Free-Threaded Performance**: 3.67× speedup with Python 3.14+ free-threading (experimental)
 
-## Why WoeBoost?
+## Best Used For
 
-- **💡 Interpretability**: Every model step adheres to principles familiar to risk managers and data scientists
-- **✅ Alignment with Regulatory Requirements**: Calibrated and interpretable results meet the demands of high-stakes applications
-- **⚡ Flexibility**: Works seamlessly with diverse data types and supports concurrency for feature binning
+- **Credit Risk Modeling**: Interpretable scoring systems that regulators can validate and approve
+- **Healthcare Risk Assessment**: Transparent models where life-critical decisions require explainable evidence
+- **Regulatory Compliance**: Meeting strict interpretability requirements while maintaining predictive power
+- **High-Stakes Decision Making**: Any domain where "black box" models are unacceptable
+- **Audit-Ready Models**: Systems that can demonstrate exactly how each decision was reached
 
-## Quick Start
+*Perfect for data scientists who refuse to sacrifice interpretability for performance in regulated environments.*
 
-### Training and Inference
-```python
-from woeboost import WoeBoostClassifier
 
-# Initialize the classifier
-woe_model = WoeBoostClassifier(infer_monotonicity=True)
-
-# Fit the model
-woe_model.fit(X_train, y_train)
-
-# Predict probabilities and scores
-probas = woe_model.predict_proba(X_test)[:, 1]
-preds = woe_model.predict(X_test)
-scores = woe_model.predict_score(X_test)
-```
-
-### WOE Inputs for Logistic Regression
-```python
-from woeboost import WoeBoostClassifier
-
-# Initialize the classifier
-woe_model = WoeBoostClassifier(infer_monotonicity=True)
-
-# Fit the model
-woe_model.fit(X_train, y_train)
-
-# Transform features to WOE values
-X_woe_train = woe_model.transform(X_train)
-X_woe_test = woe_model.transform(X_test)
-```
-
-## Free-Threaded Python Support
-
-WoeBoost includes experimental support for free-threaded Python builds, providing significant performance improvements:
-
-- **3.67× speedup** for WoeBoost training with Python 3.14+freethreaded
-- **Optimal performance at 8 threads** (vs 4 with GIL)
-- **Tested on Python 3.14.0a5+freethreaded** (experimental builds)
-
-### Installation with Free-Threaded Support
-```bash
-# Install free-threaded Python
-uv python install 3.14.0a5+freethreaded
-
-# Install WoeBoost with free-threaded dependencies
-pip install woeboost[freethreaded]
-```
-
-## Installation
-
-### Standard Installation
-```bash
-pip install woeboost
-```
-
-### Free-Threaded Python Support (Experimental)
-```bash
-# Install with free-threaded dependencies
-pip install woeboost[freethreaded]
-```
-
-## Performance Benefits
-
-- **3.67× faster training** - real measured performance improvement
-- **Automatic thread optimization** (8 threads vs 4 with GIL)
-- **No code changes required** - WoeBoost auto-detects free-threading
-- **Same results, faster computation** - identical convergence, 3.67× speedup
-
-## Use Cases
-
-- **Credit Risk Modeling**: Interpretable scoring systems for financial institutions
-- **Healthcare Risk Management**: Transparent models for medical decision support
-- **Regulatory Compliance**: Models that meet explainability requirements
-- **High-Stakes Decision Making**: Any domain requiring both accuracy and interpretability
-
-## Documentation
-
-For detailed documentation, technical notes, and API reference, visit the [WoeBoost GitHub repository](https://github.com/xRiskLab/woeboost).
-
-## License
-
-This project is licensed under the MIT License.

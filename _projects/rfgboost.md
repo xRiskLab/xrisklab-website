@@ -1,7 +1,6 @@
 ---
 layout: project
-title: "RFGBoost"
-description: "Random Forest Gradient Boosting implementation combining ensemble methods"
+title: "RFGBooescription: "Random Forest Gradient Boosting implementation combining ensemble methods"
 image: "/assets/images/projects/rfgboost.png"
 github: "https://github.com/xRiskLab/rfgboost"
 pypi: "https://pypi.org/project/rfgboost/"
@@ -9,13 +8,28 @@ tags: ["Python", "XGBoost", "Scikit-learn", "Random Forest", "Machine Learning",
 featured: false
 ---
 
-# RFGBoost: Random Forest Gradient Boosting 🌳
+RFGBoost combines **Random Forest with Gradient Boosting** using Weight of Evidence encoding for interpretable machine learning with categorical features.
 
-[![CI](https://github.com/xRiskLab/rfgboost/workflows/CI/badge.svg)](https://github.com/xRiskLab/rfgboost/actions)
-[![Compatibility](https://github.com/xRiskLab/rfgboost/workflows/Python%20Version%20Compatibility/badge.svg)](https://github.com/xRiskLab/rfgboost/actions)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Release](https://img.shields.io/github/v/release/xRiskLab/rfgboost)](https://github.com/xRiskLab/rfgboost/releases)
+## What It Does
+
+Creates a gradient boosting algorithm that uses Random Forest as base learners instead of single decision trees, providing better interpretability while maintaining strong predictive performance. Perfect for categorical-heavy datasets in financial modeling.
+
+## Key Capabilities
+
+- **Interpretable Boosting**: Extract exact decision paths and conditions from Random Forest base learners  
+- **Categorical Feature Mastery**: Built-in WOE encoding handles high-cardinality categories automatically
+- **Uncertainty Quantification**: Built-in confidence intervals for risk-aware predictions
+- **Dual Base Learners**: Choose between scikit-learn (detailed analysis) or XGBoost (speed) RandomForest
+
+## Best Used For
+
+- **Financial Risk Modeling**: Credit scoring and risk management where interpretability is mandatory
+- **Categorical-Heavy Datasets**: Datasets with many categorical features that need careful encoding
+- **Regulatory Compliance**: Applications requiring clear decision paths and explainable predictions
+- **High-Stakes Decision Making**: When you need both performance and the ability to explain every prediction
+- **Production ML Systems**: Robust handling of unseen categories and missing values in deployment
+
+*Perfect for data scientists who need gradient boosting performance with the interpretability that Random Forest provides, especially in regulated industries.*
 
 A powerful Python package combining **Random Forest Gradient Boosting (RFGBoost)** and **Fast Weight of Evidence (FastWoe)** encoding for interpretable machine learning with categorical features.
 

@@ -23,7 +23,7 @@ title: "Research & Publications"
         <div class="publication-links">
           <a href="/assets/papers/2509.09855v1.pdf" class="btn btn-primary btn-sm" target="_blank">📄 PDF</a>
           <a href="https://arxiv.org/abs/2509.09855" class="btn btn-secondary btn-sm" target="_blank">arXiv</a>
-          <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm" target="_blank">💻 Code</a>
+          <a href="https://github.com/asudjianto-xml/Information-Theoretic-for-Credit-Modeling" class="btn btn-outline btn-sm" target="_blank">💻 Code</a>
           <a href="#" class="btn btn-outline btn-sm" onclick="togglePDFViewer('pdf-2509'); return false;">👁️ Preview</a>
         </div>
         <div id="pdf-2509" class="pdf-viewer" style="display: none;">
@@ -36,7 +36,7 @@ title: "Research & Publications"
         <h3>Weight of Evidence (WOE), Log Odds, and Standard Errors</h3>
         <p class="publication-authors">Denis Burakov</p>
         <p class="publication-venue">xRiskLab Technical Report, 2024</p>
-        <p class="publication-abstract">Comprehensive methodology for computing standard errors in Weight of Evidence transformations, with practical implementations and validation studies. Includes bootstrap methods and analytical approximations for confidence interval construction.</p>
+        <p class="publication-abstract">Comprehensive methodology for computing standard errors for Weight of Evidence (WOE) values, with practical implementations.</p>
         <div class="publication-links">
           <a href="/assets/papers/woe_standard_errors.pdf" class="btn btn-primary btn-sm" target="_blank">📄 PDF</a>
           <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm" target="_blank">💻 Code</a>
@@ -58,7 +58,7 @@ title: "Research & Publications"
       
       <div class="insight-card glass-surface-hover">
         <div class="insight-type">Industry Article</div>
-        <h3>Beyond the Credit Score: Modern Decision-Making for Profitable Lending</h3>
+        <h3>Beyond Credit Scoring: A Decision-Making Framework for Profitable Lending</h3>
         <p class="insight-description">Exploring advanced machine learning techniques and their applications in modern lending decisions, focusing on interpretable AI and regulatory compliance.</p>
         <div class="insight-links">
           <a href="https://taktile.com/articles/beyond-the-credit-score-modern-decision-making-for-profitable-lending" class="btn btn-primary btn-sm" target="_blank">� Read Article</a>
