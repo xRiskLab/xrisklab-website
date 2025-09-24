@@ -1,44 +1,44 @@
----------
+------------
 
 layout: default
 
-title: "Projects"layout: defaultlayout: default
+title: "Projects"layout: default
 
 ---
 
-title: "Projects"title: "Projects"
+title: "Projects"layout: defaultlayout: default
 
 <section class="projects-hero">
 
-  <div class="container">------
+  <div class="container">---
 
     <h1 class="projects-title">Open Source Projects</h1>
 
-    <p class="projects-subtitle">Advanced machine learning libraries for risk management and interpretable AI</p>
+    <p class="projects-subtitle">Advanced machine learning libraries for risk management and interpretable AI</p>title: "Projects"title: "Projects"
 
   </div>
 
-</section><section class="projects-hero"><section class="projects-hero">
+</section><section class="projects-hero">
 
 
 
-<section class="projects-section">  <div class="container">  <div class="container">
+<section class="projects-section">  <div class="container">------
 
   <div class="container">
 
-    <div class="projects-grid">    <h1 class="projects-title">Open Source Projects</h1>    <h1 class="projects-title">Open Source Projects</h1>
+    <div class="projects-grid">    <h1 class="projects-title">Open Source Projects</h1>
 
       {% for project in site.projects %}
 
-      <div class="project-card glass-surface-hover{% if project.featured %} featured{% endif %}">    <p class="projects-subtitle">Advanced machine learning libraries for risk assessment and interpretable AI</p>    <p class="projects-subtitle">Advanced machine learning libraries for risk assessment and interpretable AI</p>
+      <div class="project-card glass-surface-hover{% if project.featured %} featured{% endif %}">    <p class="projects-subtitle">Advanced machine learning libraries for risk management and interpretable AI</p>
 
         {% if project.image %}
 
-        <div class="project-image">  </div>  </div>
+        <div class="project-image">  </div>
 
           <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">
 
-          {% if project.featured %}</section></section>
+          {% if project.featured %}</section><section class="projects-hero"><section class="projects-hero">
 
           <div class="project-overlay">
 
@@ -46,247 +46,247 @@ title: "Projects"title: "Projects"
 
           </div>
 
-          {% endif %}<section class="projects-section"><section class="projects-section">
+          {% endif %}<section class="projects-section">  <div class="container">  <div class="container">
 
         </div>
 
-        {% endif %}  <div class="container">  <div class="container">
+        {% endif %}  <div class="container">
 
         <div class="project-content">
 
-          <div class="project-header">    <div class="projects-grid">    <div class="projects-grid">
+          <div class="project-header">    <div class="projects-grid">    <h1 class="projects-title">Open Source Projects</h1>    <h1 class="projects-title">Open Source Projects</h1>
 
             <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
 
-            <div class="project-badges">      {% for project in site.projects %}      <div class="project-card glass-surface-hover featured">
+            <div class="project-badges">      {% for project in site.projects %}
 
               {% for tag in project.tags limit:2 %}
 
-              <span class="badge {% cycle 'badge-primary', 'badge-secondary' %}">{{ tag }}</span>      <div class="project-card glass-surface-hover{% if project.featured %} featured{% endif %}">        <div class="project-image">
+              <span class="badge {% cycle 'badge-primary', 'badge-secondary' %}">{{ tag }}</span>      <div class="project-card glass-surface-hover{% if project.featured %} featured{% endif %}">    <p class="projects-subtitle">Advanced machine learning libraries for risk assessment and interpretable AI</p>    <p class="projects-subtitle">Advanced machine learning libraries for risk assessment and interpretable AI</p>
 
               {% endfor %}
 
-            </div>        {% if project.image %}          <img src="/assets/images/projects/fastwoe-workflow.png" alt="FastWoe Workflow Diagram" loading="lazy">
+            </div>        {% if project.image %}
 
           </div>
 
-          <p>{{ project.description }}</p>        <div class="project-image">          <div class="project-overlay">
+          <p>{{ project.description }}</p>        <div class="project-image">  </div>  </div>
 
           <div class="project-footer">
 
-            <div class="project-links">          <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">            <span class="badge badge-featured">Featured</span>
+            <div class="project-links">          <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">
 
               <a href="{{ project.github }}" class="btn btn-outline btn-sm">GitHub</a>
 
-              {% if project.pypi %}          {% if project.featured %}          </div>
+              {% if project.pypi %}          {% if project.featured %}</section></section>
 
               <a href="{{ project.pypi }}" class="btn btn-secondary btn-sm">PyPI</a>
 
-              {% endif %}          <div class="project-overlay">        </div>
+              {% endif %}          <div class="project-overlay">
 
             </div>
 
-          </div>            <span class="badge badge-featured">Featured</span>        <div class="project-content">
+          </div>            <span class="badge badge-featured">Featured</span>
 
         </div>
 
-      </div>          </div>          <div class="project-header">
+      </div>          </div>
 
       {% endfor %}
 
-    </div>          {% endif %}            <h3><a href="/fastwoe/">FastWoe</a></h3>
+    </div>          {% endif %}<section class="projects-section"><section class="projects-section">
 
   </div>
 
-</section>        </div>            <div class="project-badges">
+</section>        </div>
 
 
 
-<section class="projects-contribute">        {% endif %}              <span class="badge badge-primary">Scikit-learn</span>
+<section class="projects-contribute">        {% endif %}  <div class="container">  <div class="container">
 
   <div class="container">
 
-    <div class="contribute-content">        <div class="project-content">              <span class="badge badge-secondary">Statistics</span>
+    <div class="contribute-content">        <div class="project-content">
 
       <h2>Contribute to xRiskLab</h2>
 
-      <p>Our projects are open source and community-driven. We welcome contributions from developers, data scientists, and researchers who share our vision of interpretable machine learning.</p>          <div class="project-header">            </div>
+      <p>Our projects are open source and community-driven. We welcome contributions from developers, data scientists, and researchers who share our vision of interpretable machine learning.</p>          <div class="project-header">    <div class="projects-grid">    <div class="projects-grid">
 
       <div class="contribute-buttons">
 
-        <a href="https://github.com/xRiskLab" class="btn btn-primary">View on GitHub</a>            <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>          </div>
+        <a href="https://github.com/xRiskLab" class="btn btn-primary">View on GitHub</a>            <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
 
         <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
 
-      </div>            <div class="project-badges">          <p>Lightweight Weight of Evidence encoding with comprehensive statistics and inference capabilities. Built for fast, efficient feature engineering in credit scoring and risk modeling.</p>
+      </div>            <div class="project-badges">      {% for project in site.projects %}      <div class="project-card glass-surface-hover featured">
 
     </div>
 
-  </div>              {% for tag in project.tags limit:2 %}          <div class="project-features">
+  </div>              {% for tag in project.tags limit:2 %}
 
 </section>
 
-              <span class="badge {% cycle 'badge-primary', 'badge-secondary' %}">{{ tag }}</span>            <ul>
+              <span class="badge {% cycle 'badge-primary', 'badge-secondary' %}">{{ tag }}</span>      <div class="project-card glass-surface-hover{% if project.featured %} featured{% endif %}">        <div class="project-image">
 
 <style>
 
-.projects-hero {              {% endfor %}              <li>✨ Efficient WOE encoding algorithms</li>
+.projects-hero {              {% endfor %}
 
   background: transparent;
 
-  padding: 80px 0 40px;            </div>              <li>📊 Statistical significance testing</li>
+  padding: 80px 0 40px;            </div>        {% if project.image %}          <img src="/assets/images/projects/fastwoe-workflow.png" alt="FastWoe Workflow Diagram" loading="lazy">
 
   text-align: center;
 
-}          </div>              <li>🔍 Information Value calculations</li>
+}          </div>
 
 
 
-.projects-title {          <p>{{ project.description }}</p>              <li>⚡ High-performance implementation</li>
+.projects-title {          <p>{{ project.description }}</p>        <div class="project-image">          <div class="project-overlay">
 
   font-size: clamp(2.5rem, 6vw, 3.5rem);
 
-  font-weight: 700;          <div class="project-footer">            </ul>
+  font-weight: 700;          <div class="project-footer">
 
   margin-bottom: 24px;
 
-  color: var(--text-primary);            <div class="project-links">          </div>
+  color: var(--text-primary);            <div class="project-links">          <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">            <span class="badge badge-featured">Featured</span>
 
   background: var(--primary-gradient);
 
-  -webkit-background-clip: text;              <a href="{{ project.github }}" class="btn btn-outline btn-sm">GitHub</a>          <div class="project-footer">
+  -webkit-background-clip: text;              <a href="{{ project.github }}" class="btn btn-outline btn-sm">GitHub</a>
 
   -webkit-text-fill-color: transparent;
 
-  background-clip: text;              {% if project.pypi %}            <div class="project-links">
+  background-clip: text;              {% if project.pypi %}          {% if project.featured %}          </div>
 
 }
 
-              <a href="{{ project.pypi }}" class="btn btn-secondary btn-sm">PyPI</a>              <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm">GitHub</a>
+              <a href="{{ project.pypi }}" class="btn btn-secondary btn-sm">PyPI</a>
 
 .projects-subtitle {
 
-  font-size: clamp(1.125rem, 3vw, 1.375rem);              {% endif %}              <a href="https://pypi.org/project/fastwoe/" class="btn btn-secondary btn-sm">PyPI</a>
+  font-size: clamp(1.125rem, 3vw, 1.375rem);              {% endif %}          <div class="project-overlay">        </div>
 
   color: var(--text-secondary);
 
-  max-width: 700px;            </div>              <a href="/assets/papers/fastwoe-statistical-inference-2023.pdf" class="btn btn-research btn-sm">📄 Paper</a>
+  max-width: 700px;            </div>
 
   margin: 0 auto;
 
-  line-height: 1.5;          </div>            </div>
+  line-height: 1.5;          </div>            <span class="badge badge-featured">Featured</span>        <div class="project-content">
 
 }
 
-        </div>          </div>
+        </div>
 
 .projects-section {
 
-  padding: 80px 0;      </div>        </div>
+  padding: 80px 0;      </div>          </div>          <div class="project-header">
 
 }
 
-      {% endfor %}      </div>
+      {% endfor %}
 
 .projects-grid {
 
-  display: grid;    </div>
+  display: grid;    </div>          {% endif %}            <h3><a href="/fastwoe/">FastWoe</a></h3>
 
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 
-  gap: 32px;  </div>      <div class="project-card glass-surface-hover">
+  gap: 32px;  </div>
 
 }
 
-</section>        <div class="project-header">
+</section>        </div>            <div class="project-badges">
 
 .project-card {
 
-  background: var(--surface-glass);          <h3><a href="/woeboost/">WoeBoost</a></h3>
+  background: var(--surface-glass);
 
   backdrop-filter: var(--blur-amount);
 
-  -webkit-backdrop-filter: var(--blur-amount);<section class="projects-contribute">          <div class="project-badges">
+  -webkit-backdrop-filter: var(--blur-amount);<section class="projects-contribute">        {% endif %}              <span class="badge badge-primary">Scikit-learn</span>
 
   border: 1px solid var(--border-glass);
 
-  border-radius: 20px;  <div class="container">            <span class="badge badge-primary">Machine Learning</span>
+  border-radius: 20px;  <div class="container">
 
   padding: 0;
 
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);    <div class="contribute-content">            <span class="badge badge-secondary">Interpretability</span>
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);    <div class="contribute-content">        <div class="project-content">              <span class="badge badge-secondary">Statistics</span>
 
   position: relative;
 
-  overflow: hidden;      <h2>Contribute to xRiskLab</h2>          </div>
+  overflow: hidden;      <h2>Contribute to xRiskLab</h2>
 
   display: flex;
 
-  flex-direction: column;      <p>Our projects are open source and community-driven. We welcome contributions from developers, data scientists, and researchers who share our vision of interpretable machine learning.</p>        </div>
+  flex-direction: column;      <p>Our projects are open source and community-driven. We welcome contributions from developers, data scientists, and researchers who share our vision of interpretable machine learning.</p>          <div class="project-header">            </div>
 
   height: 100%;
 
-}      <div class="contribute-buttons">        <p>Interpretable gradient boosting with WOE-based scoring for high-stakes domains. Combines the power of XGBoost with the interpretability requirements of regulated industries.</p>
+}      <div class="contribute-buttons">
 
 
 
-.project-card.featured {        <a href="https://github.com/xRiskLab" class="btn btn-primary">View on GitHub</a>        <div class="project-features">
+.project-card.featured {        <a href="https://github.com/xRiskLab" class="btn btn-primary">View on GitHub</a>            <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>          </div>
 
   border-color: var(--accent-blue);
 
-  background: rgba(0, 122, 255, 0.08);        <a href="/contact/" class="btn btn-secondary">Get in Touch</a>          <ul>
+  background: rgba(0, 122, 255, 0.08);        <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
 
 }
 
-      </div>            <li>🎯 WOE-based feature transformations</li>
+      </div>            <div class="project-badges">          <p>Lightweight Weight of Evidence encoding with comprehensive statistics and inference capabilities. Built for fast, efficient feature engineering in credit scoring and risk modeling.</p>
 
 .project-card::before {
 
-  content: '';    </div>            <li>� Model interpretability tools</li>
+  content: '';    </div>
 
   position: absolute;
 
-  top: 0;  </div>            <li>📈 Performance optimization</li>
+  top: 0;  </div>              {% for tag in project.tags limit:2 %}          <div class="project-features">
 
   left: 0;
 
-  right: 0;</section>            <li>⚖️ Regulatory compliance features</li>
+  right: 0;</section>
 
   height: 1px;
 
-  background: var(--primary-gradient);          </ul>
+  background: var(--primary-gradient);              <span class="badge {% cycle 'badge-primary', 'badge-secondary' %}">{{ tag }}</span>            <ul>
 
   transform: translateX(-100%);
 
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);<style>        </div>
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);<style>
 
   z-index: 2;
 
-}.projects-hero {        <div class="project-footer">
+}.projects-hero {              {% endfor %}              <li>✨ Efficient WOE encoding algorithms</li>
 
 
 
-.project-card:hover::before {  background: transparent;          <div class="project-links">
+.project-card:hover::before {  background: transparent;
 
   transform: translateX(0);
 
-}  padding: 80px 0 40px;            <a href="https://github.com/xRiskLab/woeboost" class="btn btn-outline btn-sm">GitHub</a>
+}  padding: 80px 0 40px;            </div>              <li>📊 Statistical significance testing</li>
 
 
 
-.project-card:hover {  text-align: center;            <a href="https://pypi.org/project/woeboost/" class="btn btn-secondary btn-sm">PyPI</a>
+.project-card:hover {  text-align: center;
 
   transform: translateY(-8px);
 
-  background: var(--surface-glass-hover);}          </div>
+  background: var(--surface-glass-hover);}          </div>              <li>🔍 Information Value calculations</li>
 
   box-shadow: var(--shadow-glass);
 
-}        </div>
+}
 
 
 
-.project-image {.projects-title {      </div>
+.project-image {.projects-title {          <p>{{ project.description }}</p>              <li>⚡ High-performance implementation</li>
 
   position: relative;
 
@@ -294,18 +294,325 @@ title: "Projects"title: "Projects"
 
   height: 200px;
 
-  overflow: hidden;  font-weight: 700;      <div class="project-card glass-surface-hover">
+  overflow: hidden;  font-weight: 700;          <div class="project-footer">            </ul>
 
   border-radius: 20px 20px 0 0;
 
-}  margin-bottom: 24px;        <div class="project-header">
+}  margin-bottom: 24px;
 
 
 
-.project-image img {  color: var(--text-primary);          <h3><a href="/xbooster/">xBooster</a></h3>
+.project-image img {  color: var(--text-primary);            <div class="project-links">          </div>
 
   width: 100%;
 
+  height: 100%;  background: var(--primary-gradient);
+
+  object-fit: cover;
+
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);  -webkit-background-clip: text;              <a href="{{ project.github }}" class="btn btn-outline btn-sm">GitHub</a>          <div class="project-footer">
+
+}
+
+  -webkit-text-fill-color: transparent;
+
+.project-card:hover .project-image img {
+
+  transform: scale(1.05);  background-clip: text;              {% if project.pypi %}            <div class="project-links">
+
+}
+
+}
+
+.project-overlay {
+
+  position: absolute;              <a href="{{ project.pypi }}" class="btn btn-secondary btn-sm">PyPI</a>              <a href="https://github.com/xRiskLab/fastwoe" class="btn btn-outline btn-sm">GitHub</a>
+
+  top: 16px;
+
+  right: 16px;.projects-subtitle {
+
+  z-index: 2;
+
+}  font-size: clamp(1.125rem, 3vw, 1.375rem);              {% endif %}              <a href="https://pypi.org/project/fastwoe/" class="btn btn-secondary btn-sm">PyPI</a>
+
+
+
+.project-content {  color: var(--text-secondary);
+
+  padding: 32px;
+
+  display: flex;  max-width: 700px;            </div>              <a href="/assets/papers/fastwoe-statistical-inference-2023.pdf" class="btn btn-research btn-sm">📄 Paper</a>
+
+  flex-direction: column;
+
+  flex-grow: 1;  margin: 0 auto;
+
+}
+
+  line-height: 1.5;          </div>            </div>
+
+.project-header {
+
+  margin-bottom: 20px;}
+
+}
+
+        </div>          </div>
+
+.project-header h3 {
+
+  font-size: 1.5rem;.projects-section {
+
+  font-weight: 600;
+
+  margin-bottom: 12px;  padding: 80px 0;      </div>        </div>
+
+  color: var(--text-primary);
+
+  transition: all 0.3s ease;}
+
+}
+
+      {% endfor %}      </div>
+
+.project-header h3 a {
+
+  color: inherit;.projects-grid {
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;  display: grid;    </div>
+
+}
+
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+.project-card:hover .project-header h3 {
+
+  background: var(--primary-gradient);  gap: 32px;  </div>      <div class="project-card glass-surface-hover">
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;}
+
+  background-clip: text;
+
+}</section>        <div class="project-header">
+
+
+
+.project-badges {.project-card {
+
+  display: flex;
+
+  gap: 8px;  background: var(--surface-glass);          <h3><a href="/woeboost/">WoeBoost</a></h3>
+
+  flex-wrap: wrap;
+
+}  backdrop-filter: var(--blur-amount);
+
+
+
+.badge {  -webkit-backdrop-filter: var(--blur-amount);<section class="projects-contribute">          <div class="project-badges">
+
+  padding: 4px 12px;
+
+  border-radius: 12px;  border: 1px solid var(--border-glass);
+
+  font-size: 12px;
+
+  font-weight: 500;  border-radius: 20px;  <div class="container">            <span class="badge badge-primary">Machine Learning</span>
+
+}
+
+  padding: 0;
+
+.badge-primary {
+
+  background: rgba(0, 122, 255, 0.15);  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);    <div class="contribute-content">            <span class="badge badge-secondary">Interpretability</span>
+
+  color: var(--accent-blue);
+
+  border: 1px solid rgba(0, 122, 255, 0.2);  position: relative;
+
+}
+
+  overflow: hidden;      <h2>Contribute to xRiskLab</h2>          </div>
+
+.badge-secondary {
+
+  background: rgba(88, 86, 214, 0.15);  display: flex;
+
+  color: var(--accent-purple);
+
+  border: 1px solid rgba(88, 86, 214, 0.2);  flex-direction: column;      <p>Our projects are open source and community-driven. We welcome contributions from developers, data scientists, and researchers who share our vision of interpretable machine learning.</p>        </div>
+
+}
+
+  height: 100%;
+
+.badge-featured {
+
+  background: rgba(255, 45, 146, 0.15);}      <div class="contribute-buttons">        <p>Interpretable gradient boosting with WOE-based scoring for high-stakes domains. Combines the power of XGBoost with the interpretability requirements of regulated industries.</p>
+
+  color: var(--accent-pink);
+
+  border: 1px solid rgba(255, 45, 146, 0.2);
+
+  font-weight: 600;
+
+}.project-card.featured {        <a href="https://github.com/xRiskLab" class="btn btn-primary">View on GitHub</a>        <div class="project-features">
+
+
+
+.project-card p {  border-color: var(--accent-blue);
+
+  color: var(--text-secondary);
+
+  margin-bottom: 24px;  background: rgba(0, 122, 255, 0.08);        <a href="/contact/" class="btn btn-secondary">Get in Touch</a>          <ul>
+
+  line-height: 1.6;
+
+  font-size: 15px;}
+
+  flex-grow: 1;
+
+}      </div>            <li>🎯 WOE-based feature transformations</li>
+
+
+
+.project-footer {.project-card::before {
+
+  margin-top: auto;
+
+}  content: '';    </div>            <li>� Model interpretability tools</li>
+
+
+
+.project-links {  position: absolute;
+
+  display: flex;
+
+  gap: 12px;  top: 0;  </div>            <li>📈 Performance optimization</li>
+
+  flex-wrap: wrap;
+
+}  left: 0;
+
+
+
+.btn-sm {  right: 0;</section>            <li>⚖️ Regulatory compliance features</li>
+
+  padding: 8px 16px;
+
+  font-size: 13px;  height: 1px;
+
+  border-radius: 8px;
+
+}  background: var(--primary-gradient);          </ul>
+
+
+
+.projects-contribute {  transform: translateX(-100%);
+
+  background: var(--surface-glass);
+
+  backdrop-filter: var(--blur-amount);  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);<style>        </div>
+
+  -webkit-backdrop-filter: var(--blur-amount);
+
+  border: 1px solid var(--border-glass);  z-index: 2;
+
+  border-radius: 20px;
+
+  margin: 40px auto;}.projects-hero {        <div class="project-footer">
+
+  max-width: 800px;
+
+  padding: 48px 32px;
+
+  text-align: center;
+
+}.project-card:hover::before {  background: transparent;          <div class="project-links">
+
+
+
+.contribute-content h2 {  transform: translateX(0);
+
+  font-size: 2rem;
+
+  font-weight: 600;}  padding: 80px 0 40px;            <a href="https://github.com/xRiskLab/woeboost" class="btn btn-outline btn-sm">GitHub</a>
+
+  margin-bottom: 20px;
+
+  color: var(--text-primary);
+
+}
+
+.project-card:hover {  text-align: center;            <a href="https://pypi.org/project/woeboost/" class="btn btn-secondary btn-sm">PyPI</a>
+
+.contribute-content p {
+
+  color: var(--text-secondary);  transform: translateY(-8px);
+
+  margin-bottom: 32px;
+
+  line-height: 1.6;  background: var(--surface-glass-hover);}          </div>
+
+  font-size: 16px;
+
+}  box-shadow: var(--shadow-glass);
+
+
+
+.contribute-buttons {}        </div>
+
+  display: flex;
+
+  gap: 16px;
+
+  justify-content: center;
+
+  flex-wrap: wrap;.project-image {.projects-title {      </div>
+
+}
+
+  position: relative;
+
+@media (max-width: 768px) {
+
+  .projects-grid {  width: 100%;  font-size: clamp(2.5rem, 6vw, 3.5rem);
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;  height: 200px;
+
+  }
+
+  overflow: hidden;  font-weight: 700;      <div class="project-card glass-surface-hover">
+
+  .contribute-buttons {
+
+    flex-direction: column;  border-radius: 20px 20px 0 0;
+
+    align-items: center;
+
+  }}  margin-bottom: 24px;        <div class="project-header">
+
+
+
+  .projects-contribute {
+
+    margin: 40px 16px;
+
+    padding: 32px 24px;.project-image img {  color: var(--text-primary);          <h3><a href="/xbooster/">xBooster</a></h3>
+
+  }
+
+}  width: 100%;
+
+</style>
   height: 100%;  background: var(--primary-gradient);          <div class="project-badges">
 
   object-fit: cover;

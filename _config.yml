@@ -37,7 +37,7 @@ defaults:
 # Navigation
 header_pages:
   - about.md
-  - projects/
+  - projects.md
   - contact.md
 
 # Social links
@@ -54,3 +54,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
