@@ -13,6 +13,7 @@ title: "Projects"
     <div class="projects-grid">
       {% for project in site.projects %}
       <div class="project-card{% if project.featured %} featured{% endif %}">
+        
         {% if project.image %}
         <div class="project-image">
           <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">
@@ -21,6 +22,11 @@ title: "Projects"
             <span class="badge badge-featured">Featured</span>
           </div>
           {% endif %}
+        </div>
+        {% else %}
+        <!-- fallback placeholder -->
+        <div class="project-image project-placeholder">
+          <span>{{ project.title }}</span>
         </div>
         {% endif %}
 
@@ -158,10 +164,21 @@ title: "Projects"
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
 }
 
 .project-card:hover .project-image img {
   transform: scale(1.05);
+}
+
+.project-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #222, #444);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .project-overlay {
@@ -250,7 +267,6 @@ title: "Projects"
   color: var(--text-secondary);
   font-size: 14px;
   margin-bottom: 8px;
-  padding-left: 0;
 }
 
 .project-footer {
