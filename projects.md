@@ -2,6 +2,7 @@
 layout: default
 title: "Projects"
 ---
+<!-- Force rebuild -->
 
 <section class="projects-section">
   <div class="container">
