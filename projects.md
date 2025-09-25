@@ -15,8 +15,9 @@ title: "Projects"
       <div class="project-card{% if project.featured %} featured{% endif %}">
         
         {% if project.image %}
+        <!-- Project image (with alt hidden so it doesn’t render text if missing) -->
         <div class="project-image">
-          <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">
+          <img src="{{ project.image }}" alt="" loading="lazy">
           {% if project.featured %}
           <div class="project-overlay">
             <span class="badge badge-featured">Featured</span>
@@ -24,7 +25,7 @@ title: "Projects"
           {% endif %}
         </div>
         {% else %}
-        <!-- fallback placeholder -->
+        <!-- Fallback placeholder if no image defined -->
         <div class="project-image project-placeholder">
           <span>{{ project.title }}</span>
         </div>
@@ -175,10 +176,12 @@ title: "Projects"
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
   background: linear-gradient(135deg, #222, #444);
   color: var(--text-secondary);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 20px 20px 0 0;
 }
 
 .project-overlay {
