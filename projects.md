@@ -111,9 +111,12 @@ title: "Projects"
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
   margin-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card {
@@ -169,17 +172,18 @@ title: "Projects"
 }
 
 .project-content {
-  padding: 32px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .project-header h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: var(--text-primary);
+  line-height: 1.3;
 }
 
 .project-header h3 a {
@@ -197,9 +201,9 @@ title: "Projects"
 
 .project-badges {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .badge {
@@ -230,9 +234,9 @@ title: "Projects"
 
 .project-content p {
   color: var(--text-secondary);
-  margin-bottom: 20px;
-  line-height: 1.6;
-  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-size: 14px;
   flex-grow: 1;
 }
 
@@ -304,10 +308,21 @@ title: "Projects"
   flex-wrap: wrap;
 }
 
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
+    margin-top: 32px;
+  }
+
+  .project-content {
+    padding: 20px;
   }
 
   .contribute-buttons {
